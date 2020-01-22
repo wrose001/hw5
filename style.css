@@ -11,6 +11,8 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    width: 100%;
+    height: 100%;
   }
   
   .jumbotron {
@@ -73,3 +75,25 @@ body {
   .row {
       margin-left: 10%;
   }
+
+  /* .col-sm-1 {
+      text-align: center;
+      width: 20%;
+      height: 20%;
+  } */
+
+  .col-sm-8 {
+      width: 100%;
+      height: 100%;
+  }
+
+  .col-sm-2 {
+      width: 20%;
+      height: 100%;
+      text-align: center;
+
+  }
+
+  /* .icon {
+      padding: 10%
+  } */
