@@ -17,7 +17,7 @@ body {
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
+    background-color: teal;
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
@@ -87,11 +87,19 @@ body {
       height: 100%;
   }
 
-  .col-sm-2 {
+  .timeslot {
+      background: tan;
       width: 20%;
       height: 100%;
+      font-weight: bolder;
       text-align: center;
-      padding-top: 25px;
+      padding-top: 30px;
+  }
+
+  .far, .fa-save {
+      padding-left: auto !important;
+      padding-right: auto !important;
+      padding-top: 10% !important;
   }
 
   /* .icon {
