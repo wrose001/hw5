@@ -12,9 +12,41 @@ $( document ).ready(function() {
 
     };
 
-$(".9amSave").on('click', function(){
+$(".9amsave").on('click', function(){
     var amText = $(".9am").val();
     localStorage.setItem("9amSlot", amText);
+});
+$(".10amsave").on('click', function(){
+    var amText = $(".10am").val();
+    localStorage.setItem("10amSlot", amText);
+});
+$(".11amsave").on('click', function(){
+    var amText = $(".11am").val();
+    localStorage.setItem("11amSlot", amText);
+});
+$(".12pmsave").on('click', function(){
+    var amText = $(".12pm").val();
+    localStorage.setItem("12pmSlot", pmText);
+});
+$(".1pmsave").on('click', function(){
+    var amText = $(".1pm").val();
+    localStorage.setItem("1pmSlot", pmText);
+});
+$(".2pmsave").on('click', function(){
+    var amText = $(".2pm").val();
+    localStorage.setItem("2pmSlot", pmText);
+});
+$(".3pmsave").on('click', function(){
+    var amText = $(".3pm").val();
+    localStorage.setItem("3pmSlot", pmText);
+});
+$(".4pmsave").on('click', function(){
+    var amText = $(".4pm").val();
+    localStorage.setItem("4pmSlot", pmText);
+});
+$(".5pmsave").on('click', function(){
+    var amText = $(".5pm").val();
+    localStorage.setItem("5pmSlot", pmText);
 });
 
 
