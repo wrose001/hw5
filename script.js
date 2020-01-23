@@ -3,6 +3,7 @@ $( document ).ready(function() {
     var currentDate = moment().format('dddd' + ',' + ' MMMM DD');
     var currentTime = moment().format('HH');
 
+    var textarea = $("<textarea>");
 
     $("#currentDate").text(currentDate);
 
