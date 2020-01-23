@@ -55,7 +55,11 @@ $(textarea).foreach(function(){
     var time = $(textarea).attr("data-time").val();
     if(time === currentTime) {
         $(textarea).attr("class", "present");
-
+    } 
+    else if(time > currentTime) {
+        $(textarea).attr("class", "future");
+    } else {
+        $(textarea).attr("class", "past");
     }
 });
 
