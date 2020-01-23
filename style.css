@@ -102,6 +102,13 @@ body {
       padding-top: 10% !important;
   }
 
+  .iconOne {
+    .icon {
+        padding-top: 10% !important;
+        margin-right: 60px !important;
+    }
+  }
+
   /* .icon {
       padding: 10%
   } */
