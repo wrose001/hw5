@@ -1,9 +1,10 @@
 $( document ).ready(function() {
-
     var currentDate = moment().format('dddd' + ',' + ' MMMM DD');
     var currentTime = moment().format('HH');
 
-    var textarea = $("<textarea>");
+    // var textarea = $("<textarea>");
+
+    // const time = $(textarea).attr("data-time").val();
 
     $("#currentDate").text(currentDate);
 
@@ -26,41 +27,42 @@ $(".11amsave").on('click', function(){
     localStorage.setItem("11amSlot", amText);
 });
 $(".12pmsave").on('click', function(){
-    var amText = $(".12pm").val();
+    var pmText = $(".12pm").val();
     localStorage.setItem("12pmSlot", pmText);
 });
 $(".1pmsave").on('click', function(){
-    var amText = $(".1pm").val();
+    var pmText = $(".1pm").val();
     localStorage.setItem("1pmSlot", pmText);
 });
 $(".2pmsave").on('click', function(){
-    var amText = $(".2pm").val();
+    var pmText = $(".2pm").val();
     localStorage.setItem("2pmSlot", pmText);
 });
 $(".3pmsave").on('click', function(){
-    var amText = $(".3pm").val();
+    var pmText = $(".3pm").val();
     localStorage.setItem("3pmSlot", pmText);
 });
 $(".4pmsave").on('click', function(){
-    var amText = $(".4pm").val();
+    var pmText = $(".4pm").val();
     localStorage.setItem("4pmSlot", pmText);
 });
 $(".5pmsave").on('click', function(){
-    var amText = $(".5pm").val();
+    var pmText = $(".5pm").val();
     localStorage.setItem("5pmSlot", pmText);
 });
 
 
 
-$(textarea).foreach(function(){
-    var time = $(textarea).attr("data-time").val();
-    if(time === currentTime) {
-        $(textarea).attr("class", "present");
-    } 
-    else if(time > currentTime) {
-        $(textarea).attr("class", "future");
-    } else {
-        $(textarea).attr("class", "past");
+$('textarea').each(function(){
+    const time = $(this).attr("data-time");
+    console.log($(this).removeClass("present"));
+    console.log($(this).addClass("future"));
+    if(time > currentTime) {
+         $(this).removeClass("present");
+         $(this).addClass("future");
+    } else if(time < currentTime) {
+        $(this).removeClass("present");
+        $(this).addClass("past");
     }
 });
 
