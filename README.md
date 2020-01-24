@@ -16,7 +16,7 @@ This web application is a simple calendar application that allows users to save 
 
 ## Images
 
-![]()
+![Screenshot 1](/images/Screenshot.png)
 
 ## Built With
 
