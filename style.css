@@ -97,17 +97,16 @@ body {
   }
 
   .icon {
-      padding-left: auto !important;
-      padding-right: auto !important;
-      padding-top: 10% !important;
+      display: block;
+      text-align:center;
   }
 
-  .iconOne {
+  /* .iconOne {
     .icon {
         padding-top: 10% !important;
         margin-right: 60px !important;
     }
-  }
+  } */
 
   /* .icon {
       padding: 10%
